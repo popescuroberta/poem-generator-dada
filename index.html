@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem Dadaist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #343a40;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
+            width: 90%;
+            max-width: 600px;
+            margin-top: 10px;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input, button {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #aaaaaa;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #aaaaaa;
+            transform: translateY(-3px);
+        }
+
+        .output {
+            width: 90%;
+            max-width: 600px;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            textarea {
+                font-size: 0.9rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            textarea {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 0.8rem;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generator de Poeme Dadaiste</h1>
+    <button onclick="window.location.href='despre-curent.html'">Despre Curent</button>
+    <textarea id="textInput" placeholder="Introdu textul sursă aici..." rows="6" cols="50"></textarea>
+    <br>
+    <label for="wordsPerLine">Cuvinte per linie:</label>
+    <input id="wordsPerLine" type="number" min="1" value="5">
+    <br><br>
+    <button onclick="generatePoem()">Generează Poem</button>
+    <button onclick="savePoem()">Salvează Poem</button>
+
+    <div id="output" class="output"></div>
+
+    <footer>
+        Creat de Roberta-Andreea Popescu, 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
