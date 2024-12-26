@@ -1,64 +1,67 @@
-# poem-generator-dada
+# Dadaist Poem Generator
 
-This project is a Dadaist poem generator written in C++, combined with a web-based interface to interact with the poem generation system. It creates random poems based on user-provided text, using a mix of word shuffling and interactive user input for line-by-line poem generation. The web interface allows users to explore and learn more about the Dadaist movement, and interact with the poem generator.
+This project consists of a **Dadaist poem generator** written in **C++**, combined with a **web-based interface** that allows users to interact with the poem generation system. The generator produces random poems by shuffling words, based on user input. The web interface enables users to learn about the Dadaist movement and explore the creative potential of Dadaist poetry.
 
 ## Features
 
 ### C++ Poem Generator
 - **Random poem generation**: Words are shuffled randomly to create unique poetic lines.
 - **Customizable line length**: You can specify how many words each line should have.
-- **User interaction**: After each line is generated, the user can decide whether to continue or stop.
+- **User interaction**: After each line is generated, the user can choose whether to continue or stop.
 - **Text input options**: Choose to manually input text or read from a file.
-- **Save poems**: Save the generated poem to a file for later use.
+- **Save poems**: The option to save generated poems to a file for later use.
 
 ### Web Interface
-- **Interactive Dadaist Poem Generator**: Use the web interface to interact with the poem generator in real-time.
-- **About the Dadaist Movement**: A dedicated page (`despre-curent.html`) explaining the principles and history of Dadaism.
-- **Responsive Design**: The website is designed to work seamlessly on both desktop and mobile devices.
-- **Poem Generation**: Generate Dadaist poems directly from your browser with options to customize the poem's length and content.
+- **Interactive Dadaist Poem Generator**: Use the web interface to generate random Dadaist poems directly from your browser.
+- **Dadaist Movement Information**: A dedicated page (`despre-curent.html`) explaining the history and principles of Dadaism.
+- **Responsive Design**: The site adapts seamlessly to desktop and mobile devices, providing a pleasant experience on both.
+- **Poem Generation**: Customize the generated poem’s length and content directly from the web interface.
+- **Quote Generator**: Fetches random poetry quotes from an external API and displays the verse, author, and poem title.
 
 ## Prerequisites
-- A C++ compiler (e.g., `g++`) installed on your system.
-- A web server (for running the HTML files), or you can use a local server like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.
+
+- A **C++ compiler** (e.g., `g++`) installed on your system to compile the C++ code.
+- A **web server** (or use a local server like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code) to run the HTML files.
 
 ## How to Run
 
 ### Step 1: Clone the Repository
-To get started, clone this repository to your local machine:
+Clone this repository to your local machine using the following command:
 ```bash
 git clone https://github.com/your-username/poem-generator-dada.git
 ```
 
 ### Step 2: Navigate into the Project Directory
-Move into the cloned directory:
+Go to the project folder:
 ```bash
 cd poem-generator-dada
 ```
 
 ### Step 3: Compile the C++ Code
-Compile the C++ source file using `g++`:
+To compile the C++ program, use the following command:
 ```bash
 g++ poem_generator.cpp -o poem_generator
 ```
-
-Alternatively, if you are using the provided `Makefile`, run:
+Alternatively, if you're using the provided `Makefile`, run:
 ```bash
 make
 ```
 
 ### Step 4: Run the C++ Program
-Run the compiled C++ program:
+Once the program is compiled, run it:
 ```bash
 ./poem_generator
 ```
-
-The program will prompt you to choose a text input method and guide you through the poem generation process.
+You will be prompted to select a text input method and will be guided through the poem generation process.
 
 ### Step 5: Run the Web Interface
-To run the web interface:
-1. Open `index.html` in your browser or set up a local server to serve the files.
-2. Use the interactive Dadaist Poem Generator on the page.
-3. Visit `despre-curent.html` to learn about the Dadaist movement.
+To use the web interface:
+1. Open `index.html` in your browser.
+2. The interactive Dadaist Poem Generator is ready to use.
+3. Visit `despre-curent.html` to learn about the Dadaist movement and its historical context.
+
+### Step 6: Enable Quote Display
+The web interface also displays random poetry quotes, along with the author and the title of the poem. These are fetched from the PoetryDB API.
 
 ## Example Run (C++ Program)
 ```
@@ -75,7 +78,7 @@ Vrei sa continui cu generarea urmatoarei linii? (y/n) y
 ```
 
 ## Saving Poems (C++ Program)
-When you choose to save the poem, you will be prompted to enter a filename (e.g., `my_poem.txt`). The poem will be saved in the current directory.
+When you decide to save the poem, the program will ask for a filename (e.g., `my_poem.txt`) and save the poem in the current directory.
 
 ## Project Structure
 ```
@@ -83,12 +86,11 @@ When you choose to save the poem, you will be prompted to enter a filename (e.g.
 ├── poem_generator.cpp   # The main C++ source file for generating poems
 ├── Makefile             # (Optional) Makefile to compile the project
 ├── README.md            # This file
-├── index.html           # The main HTML page for the web interface
-├── despre-curent.html   # The page explaining the Dadaist movement
+├── index.html           # Main HTML page for the web interface
+├── despre-curent.html   # Page explaining the Dadaist movement
 ├── script.js            # JavaScript for interactive functionality
 └── examples/            # (Optional) Folder containing example input files or poems
 ```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
