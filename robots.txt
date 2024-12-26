@@ -1,0 +1,6 @@
+# Permite tuturor roboților să acceseze toate paginile
+User-agent: *
+Disallow:
+
+# Adăugați linkul către sitemap-ul site-ului
+Sitemap: https://popescuroberta.github.io/poem-generator-dada/sitemap.xml
