@@ -83,13 +83,18 @@ When you decide to save the poem, the program will ask for a filename (e.g., `my
 ## Project Structure
 ```
 .
-├── poem_generator.cpp   # The main C++ source file for generating poems
-├── Makefile             # (Optional) Makefile to compile the project
-├── README.md            # This file
-├── index.html           # Main HTML page for the web interface
-├── despre-curent.html   # Page explaining the Dadaist movement
-├── script.js            # JavaScript for interactive functionality
-└── examples/            # (Optional) Folder containing example input files or poems
+├── LICENSE                # License file for the project
+├── README.md              # This file (describes the project)
+├── despre-curent.html     # Page explaining the Dadaist movement
+├── example.txt            # Example input file for the C++ program/website
+├── google6655c7804bcb423a.html  # Google verification file (for site indexing)
+├── index.html             # Main HTML page for the web interface
+├── poem_dadaist_generator.cpp   # C++ source file for generating poems
+├── robots.txt             # File for controlling search engine crawlers
+├── script.js              # JavaScript for interactive functionality
+├── sitemap.xml            # Sitemap for better SEO and site indexing
+└── style.css              # CSS file for styling the website
+
 ```
 
 ## License
